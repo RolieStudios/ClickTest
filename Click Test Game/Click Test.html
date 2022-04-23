@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link rel="manifest" href="manifest.json">
+    <title>Click Test - Normal</title>
+
+    <style>
+
+        #section1 {
+            background-color: rgb(202, 201, 199);
+            height: 0.7cm;
+            width: 100%;
+        }
+
+
+        * {
+            margin: 0;
+        }
+
+
+        .section2 {
+            background-color: rgb(170, 172, 173);
+            height: 1.7cm;
+            width: 100%;
+        }
+
+        #head1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 30px;
+            padding-left: 0.6cm;
+            width: 80%;
+        }
+
+        #img1 {
+            height: 1.5cm;
+            width: 1.5cm;
+            padding-right: 1.5cm;
+        }
+
+        #img2 {
+            height: 1.2cm;
+            width: 1.9cm;
+            padding-right: 2cm;
+        }
+
+        #section3 {
+            background-color: rgb(141, 139, 138);
+            height: 1.5cm;
+            width: 100%;
+        }
+
+        #section4 {
+            background-color: rgb(114, 112, 110);
+            height: 2.3cm;
+            width: 100%;
+        }
+
+        .time {
+            width: 100%;
+            height: 1.6cm;
+            background-color:rgb(66, 65, 65);
+        }
+
+        .sek {
+            background-color: rgb(160, 160, 160);
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .sek:hover {
+            cursor: pointer;
+            background-color: rgb(142, 143, 140);
+        }
+
+        #ts {
+            padding-left: 0.7cm;
+            padding-top: 0.4cm;
+            font-size: 37px;
+            font-family: 'Anton', sans-serif;
+            float: left;
+        }
+
+        #section5 {
+            height: 17cm;
+            background-color: rgb(127, 128, 129);
+        }
+
+        #startb {
+            height: 2cm;
+            width: 4cm;
+            padding-left: 3cm;
+            padding-top: 4cm;
+        }
+
+        #cf {
+            padding-right:3cm;
+            padding-left: 2cm;
+            float: right;
+        }
+
+        #count {
+            float: right;
+            padding-top: 3cm;
+            padding-left: 1cm;
+            padding-right: 10cm;
+            font-size: 30px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        #section6 {
+            padding-top: 3cm;
+            padding-left: 4cm;
+        }
+
+        #section7 {
+            padding-top: 1cm;
+            padding-left:13cm;
+        }
+
+        #button1 {
+            background-color:rgb(112, 112, 112);
+            height: 2cm;
+            width: 4cm;
+            text-align: center;
+        }
+        
+        #Button2 {
+            background-color:rgb(112, 112, 112);
+            height: 7cm;
+            width: 10cm;
+            text-align: center;
+        }
+
+        #times {
+            float: right;
+            font-size: 37px;
+            font-family: 'Anton', sans-serif;
+            padding-top: 0.4cm;
+            padding-right: 1cm;
+        }
+
+
+    </style>
+
+
+    <script>
+
+        var timer = 0;
+        var count = 0;
+
+        function c() {
+            count = count + 1;
+            document.getElementById("count").textContent=count + " Klicks";
+        }
+
+        function sek() {
+            timer = 1;
+            document.getElementById("ts").textContent="1 Sekunde";
+        }
+
+        function sek10() {
+            timer = 10;
+            document.getElementById("ts").textContent="10 Sekunden";
+        }
+
+        function sek100() {
+            timer = 100;
+            document.getElementById("ts").textContent="100 Sekunden";
+        }
+
+        function s() {
+            count = 0;
+            document.getElementById("times").textContent="Warte 3sek.";
+            setTimeout(s1, 1000)
+        }
+
+        function s1() {
+            count = 0;
+            document.getElementById("times").textContent="Warte 2sek.";
+            setTimeout(s2, 1000)
+        }
+
+        function s2() {
+            count = 0;
+            document.getElementById("times").textContent="Warte 1sek.";
+            setTimeout(s3, 1000)
+        }
+
+        function s3() {
+            count = 0;
+            document.getElementById("times").textContent="Los!";
+            s4();
+            setTimeout(times, 1000)
+            if(timer == 1) {
+                setTimeout(end, 1000)
+            }
+        }
+
+        function end() {
+            document.getElementById("times").textContent="Ende!";
+            timer = 0;
+            window.alert("Du hast " + count + " Clicks geschafft!");
+        }
+
+        function s4() {
+            s5();
+            if(timer == 10) {
+                setTimeout(end, 10000)
+            }
+        }
+
+        function s5() {
+            if(timer == 100) {
+                setTimeout(end, 100000)
+            }
+        }
+
+        function times() {
+
+            if(timer > 1) {
+                timer = timer - 1;
+                document.getElementById("ts").textContent=timer + " Sekunden";
+                setTimeout(times, 1000)
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function BrickTycoon(bestGame) {
+                var arbeit = viel   
+                if(arbeit = viel) {
+                    var BrickTycoon = goodGame
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <div class="section2">
+        <table class="section2">
+            <tr>
+                <td id="head1">Click Test - Normal</td>
+                <td><a href="https://www.youtube.com/channel/UCpB7GiN0X08ZD-it488gmvg"><img id="img1" src="YouTube_23392.png"></a></td>
+                <td><a href="https://discord.gg/DgxWjtMD"><img id="img2" src="discord.png"></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="time">
+        <table class="time">
+            <tr>
+                <td class="sek" onclick="sek()">1 Sekunde</td>
+                <td class="sek" onclick="sek10()">10 Sekunden</td>
+                <td class="sek" onclick="sek100()">100 Sekunden</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="section3"></div>
+
+    <div id="section4">
+        <strong><p id="ts"></p></strong><p id="times"></p>
+    </div>
+
+    <div id="section5">
+
+        <p id="count"></p>
+
+        <table id="section6">
+            <tr>
+                <td onclick="s()" id="button1">Start</td>
+            </tr>
+        </table>
+        <table id="section7">
+            <tr>
+                <td id="Button2" onclick="c()">Click Here!</td>
+            </tr>
+        </table>
+        
+
+    </div>
+
+
+</body>
+</html>
